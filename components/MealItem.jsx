@@ -12,9 +12,9 @@ export default function MealItem(props){
                 </View>
 
                 <View style={styles.details}>
-                    <Text> {props.duration} </Text>
-                    <Text> {props.complexity} </Text>
-                    <Text> {props.affordability} </Text>
+                    <Text style={styles.detailItem}> {props.duration} </Text>
+                    <Text style={styles.detailItem}> {props.complexity} </Text>
+                    <Text style={styles.detailItem}> {props.affordability} </Text>
                 </View>
             </Pressable>
         </View>
@@ -50,5 +50,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 8,
+    },
+    detailItem:{
+        marginHorizontal: 4,
+        fontSize: 12
     }
 })
