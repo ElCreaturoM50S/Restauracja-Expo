@@ -4,9 +4,7 @@ import {
     FlatList
 } from 'react-native';
 import {CATEGORIES} from "../data/dummy-data"
-import { render } from 'react-dom';
 import CategryGridTitle from '../components/CategoryGridTitle';
-
 
 export default function CategoriesScreen(props){
     const renderCategories = (itemData) => {
